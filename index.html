@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bento — food diary</title>
+<meta name="description" content="A private food diary: log meals, scan barcodes and labels, track nutrients. Everything stays on your phone.">
+<meta name="theme-color" content="#F4F4F0">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+<script>try{var t=JSON.parse(localStorage.getItem('bento.v1')||'{}').settings;if(t&&t.theme&&t.theme!=='system')document.documentElement.dataset.theme=t.theme}catch(e){}</script>
+</head>
+<body>
+<div id="app">
+  <main id="view" tabindex="-1"></main>
+  <nav id="tabs" aria-label="Sections"></nav>
+</div>
+<div id="overlays"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="date" id="datePick" class="visually-hidden" tabindex="-1" aria-hidden="true">
+<input type="file" id="labelCam" accept="image/*" capture="environment" hidden>
+<input type="file" id="restoreFile" accept="application/json,.json" hidden>
+<noscript><p style="padding:24px">Bento needs JavaScript to run.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

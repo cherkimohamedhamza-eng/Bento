@@ -1,0 +1,22 @@
+{
+  "name": "Bento — food diary",
+  "short_name": "Bento",
+  "description": "Log what you eat, scan barcodes and labels, track nutrients. Private and offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F4F0",
+  "theme_color": "#1E2326",
+  "lang": "en",
+  "categories": ["health", "food"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Add food", "url": "./?add=1", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
